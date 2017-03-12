@@ -15,6 +15,9 @@ def login(username, password):
 
 
 def main():
+    if len(sys.argv) < 3:
+        print("Usage: allianceautologin <username> <password>")
+        return
     username = sys.argv[1]
     password = sys.argv[2]
     try:
