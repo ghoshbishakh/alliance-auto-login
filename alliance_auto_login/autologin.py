@@ -5,8 +5,8 @@ import sys
 
 def login(username, password):
     print("Attempting to login..")
-    payload = {'user': 'ghoshkanika',
-               'pass': 'hakunamatata!1',
+    payload = {'user': username,
+               'pass': password,
                'login': 'Login'}
     try:
         requests.post("http://10.254.254.102/0/up/", data=payload)
